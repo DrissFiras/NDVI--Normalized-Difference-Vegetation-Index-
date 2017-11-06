@@ -40,7 +40,7 @@ else :
     nir_aligned = cv2.warpAffine(nir_channel, warp_matrix, (640,480), flags=cv2.INTER_LINEAR + cv2.WARP_INVERSE_MAP);  
     red_aligned = cv2.warpAffine(red_channel, warp_matrix, (640,480), flags=cv2.INTER_LINEAR + cv2.WARP_INVERSE_MAP);  
 
-# Show final results  
+
 cv2.imwrite('NIRALIGNED.png',nir_aligned)
 cv2.imwrite('redaligned.png',red_aligned)
 
